@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sebanes.a4itg_sebanes_angeli_mp1.MainActivity"
+    android:background="#800000">
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose which button to click"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessage"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        android:text="On The Web"
+        android:onClick="onTheWeb"/>
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnWeb"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:text="Email"
+        android:padding="20dp"
+        android:onClick="email"/>
+
+</RelativeLayout>
